@@ -1,14 +1,14 @@
 
 import java.util.Scanner;
 
-class Problem3 {
+class Problem3{
 
     static int add(int a, int b) {
         return a + b;
     }
 
     static boolean iseven(int a) {
-        if (a % 2 == 0) {
+        if(a % 2 == 0) {
             return true;
         } else {
             return false;

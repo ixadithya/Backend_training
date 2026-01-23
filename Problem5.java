@@ -31,6 +31,7 @@ class Problem5{
     Employee e2=new Employee(2,"B",2000);
 
     e1.dispempdetails();
+    e2.dispempdetails();
   }
 }
 

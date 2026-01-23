@@ -36,7 +36,7 @@ class Student {
     }
 
     public boolean ispassed() {
-        if (marks >=40) {
+        if(marks >=40) {
             return true;
         } else {
             return false;

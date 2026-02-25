@@ -1,4 +1,0 @@
-2, Ravi,17 --> Age below 18
-x, John,25 --> Invalid number format
-1, Ram ,22 --> Duplicate record: 1, Ram ,22
- --> Incorrect format

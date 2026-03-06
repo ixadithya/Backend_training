@@ -1,10 +1,10 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;   
-import java.util.List;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 
 public class Problem1{
@@ -84,7 +84,7 @@ public static void rev(int st,int ed,String line){
 
         List<Map.Entry<String,Integer>> list=new ArrayList<>(Map.entrySet());
 
-        list.sort((a,b)->b.getValue()-(a.getValue()));//sorting in descending order of frequency and printing top 5
+        list.sort((a,b)->b.getValue()-(a.getValue()));//srtng in des order of freq and printing top 5
         System.out.println("Top 5 most frequent words:");
         for(int i=0;i<Math.min(5,list.size());i++){
             Map.Entry<String,Integer> entry=list.get(i);

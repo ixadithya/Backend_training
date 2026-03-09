@@ -5,35 +5,39 @@ import jakarta.annotation.PreDestroy;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.stereotype.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Component
 public class MyBean implements InitializingBean, DisposableBean {
 
+    private static final Logger logger = LoggerFactory.getLogger(MyBean.class);
+
     public MyBean() {
-        System.out.println("1 Bean created");
+        logger.info("1 Bean created");
     }
 
     @PostConstruct
     public void init1() {
-        System.out.println("2 @PostConstruct called");
+        logger.info("2 @PostConstruct called");
     }
 
     @Override
     public void afterPropertiesSet() {
-        System.out.println("3 afterPropertiesSet()");
+        logger.info("3 afterPropertiesSet()");
     }
 
     public void run() {
-        System.out.println("4 Bean working");
+        logger.info("4 Bean working");
     }
 
     @PreDestroy
     public void end1() {
-        System.out.println("5 @PreDestroy called");
+        logger.info("5 @PreDestroy called");
     }
 
     @Override
     public void destroy() {
-        System.out.println("6 destroy()");
+        logger.info("6 destroy()");
     }
 }
